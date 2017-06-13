@@ -1,0 +1,20 @@
+<%- include('header') %>
+
+
+
+<div class="ui grid">
+<% users.forEach(function (user) { %>
+  <%- include('user', { user: user }) %>
+<% }) %>
+</div>
+
+<button onclick="click()">按钮啊</button>
+<%- include('footer') %>
+
+
+<script>
+	
+	function click(){
+		console.log("123123")
+	}
+</script>
